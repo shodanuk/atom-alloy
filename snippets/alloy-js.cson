@@ -1,0 +1,55 @@
+".source.js":
+    "Collections":
+        "prefix": "aycols"
+        "body": "Alloy.Collections.$1"
+    "Models":
+        "prefix": "aymods"
+        "body": "Alloy.Models.$1"
+    "Globals":
+        "prefix": "ayglobs"
+        "body": "Alloy.Globals.$1"
+    "CFG":
+        "prefix": "aycfg"
+        "body": "Alloy.CFG.$1"
+    "isHandheld":
+        "prefix": "ayishan"
+        "body": "Alloy.isHandheld"
+    "isTablet":
+        "prefix": "ayistab"
+        "body": "Alloy.isTablet"
+    "animation":
+        "prefix": "ayanim"
+        "body": "var animation = require('alloy/animation');"
+    "dialogs":
+        "prefix": "aydiag"
+        "body": "var dialogs = require('alloy/dialogs');"
+    "measurement":
+        "prefix": "aymeas"
+        "body": "var measurement = require('alloy/measurement');"
+    "moment":
+        "prefix": "aymom"
+        "body": "var moment = require('alloy/moment');"
+    "sha1":
+        "prefix": "aysha1"
+        "body": "var sha1 = require('alloy/sha1');"
+    "social":
+        "prefix": "aysoc"
+        "body": "var social = require('alloy/social');"
+    "string":
+        "prefix": "aytr"
+        "body": "var string = require('alloy/string');"
+    "createController":
+        "prefix": "ayccon"
+        "body": "Alloy.createController(\"${1:name}\", {${2:args}});"
+    "createController":
+        "prefix": "ayccon"
+        "body": "Alloy.createController(\"${1:name}\", {${2:args}});"
+    "createCollection":
+        "prefix": "ayccol"
+        "body": "Alloy.createCollection(\"${1:name}\", {${2:args}});"
+    "createModel":
+        "prefix": "aycmod"
+        "body": "Alloy.createModel(\"${1:name}\", {${2:args}});"
+    "createWidget":
+        "prefix": "aycwid"
+        "body": "Alloy.createWidget(\"${1:id}\", \"${2:name}\", {${3:args}});"

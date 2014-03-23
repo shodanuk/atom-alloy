@@ -1,0 +1,141 @@
+".text.xml":
+    "Alloy":
+        "prefix": "alloy"
+        "body": """
+            <Alloy>
+                $1
+            </Alloy>
+         """
+    "Window":
+        "prefix": "aywin"
+        "body": """
+            <Window id=\"win\" title=\"${1:My Window}\">
+                $2
+            </Window>
+            """
+    "View":
+        "prefix": "ayview"
+        "body": """
+            <View id=\"${1:myView}\" class=\"${2:classname}\">
+                $3
+            </View>
+            """
+    "Button":
+        "prefix": "aybut"
+        "body": "<Button id=\"${1:myButton}\" class=\"${2:classname}\" title=\"${3:Submit}\" onClick=\"${4:function}\" />"
+    "Label":
+        "prefix": "aylab"
+        "body": "<Label id=\"${1:myLabel}\" class=\"${2:classname}\" text=\"${3:Some text}\" />"
+    "ImageView":
+        "prefix": "ayimg"
+        "body": "<ImageView id=\"${1:myImage}\" class=\"${2:classname}\" image=\"${3:file}.png\" />"
+    "Collection":
+        "prefix": "aycol"
+        "body": "<Collection src=\"${1:model}\" />"
+    "Collection instance":
+        "prefix": "aycolinst"
+        "body": "<Collection src=\"${1:model}\" instance=\"true\" id=\"${2:myCollection}\" />"
+    "Model":
+        "prefix": "aymod"
+        "body": "<Model src=\"${1:model}\" />"
+    "Model instance":
+        "prefix": "aymodinst"
+        "body": "<Model src=\"${1:model}\" instance=\"true\" id=\"${2:myModel}\" />"
+    "ListView":
+        "prefix": "aylist"
+        "body": """
+            <ListView id=\"${1:text}\" defaultItemTemplate=\"template\" onItemclick=\"${2:function}\">
+                <Templates>
+                    <ItemTemplate name=\"template\">
+                        <Label id=\"myLabel\" />
+                    </ItemTemplate>
+                </Templates>
+
+                <ListSection headerTitle=\"${4:text}\" dataCollection=\"${5:collection}\" dataTransform=\"${6:function}\">
+                    <ListItem myLabel:text=\"${7:text}\" />
+                </ListSection>
+            </ListView>
+            """
+    "ListSection":
+        "prefix": "aylistsec"
+        "body": """
+            <ListSection headerTitle=\"${1:text}\" dataCollection=\"${2:collection}\" dataTransform=\"${3:function}\">
+                <ListItem myLabel:text=\"${4:text}\" />
+            </ListSection>
+            """
+    "ListItem":
+        "prefix": "aylistitem"
+        "body": """
+            <ListItem myLabel:text=\"${1:text}\" />
+            """
+    "Templates":
+        "prefix": "aytemp"
+        "body": """
+            <Templates>
+                $1
+            </Templates>
+            """
+    "ItemTemplate":
+        "prefix": "aylisttemp"
+        "body": """
+            <ItemTemplate name=\"template\">
+                <Label id=\"myLabel\" />
+            </ItemTemplate>
+            """
+    "TableView":
+        "prefix": "aytable"
+        "body": """
+            <TableView id=\"${1:text}\" dataCollection=\"${2:collection}\" dataTransform=\"${3:function}\">
+                <TableViewSection id=\"${4:text}\" headerTitle=\"${5:text}\">
+                    <TableViewRow title=\"${6:text}\"/>
+                        $7
+                    </TableViewRow>
+                </TableViewSection>
+            </TableView>
+            """
+    "TableViewSection":
+        "prefix": "aytvs"
+        "body": """
+            <TableViewSection id=\"${1:text}\" headerTitle=\"${2:text}\">
+                <TableViewRow title=\"${3:text}\"/>
+                    $4
+                </TableViewRow>
+            </TableViewSection>
+            """
+    "TableViewRow":
+        "prefix": "aytvr"
+        "body": """
+            <TableViewRow title=\"${1:text}\"/>
+                $2
+            </TableViewRow>
+            """
+    "TabGroup":
+        "prefix": "aytabgrp"
+        "body": """
+            <TabGroup>
+                <Tab id=\"${1:text}\" title=\"${2:text}\" icon=\"${3:file}.png\">
+                    $4
+                </Tab>
+            </TabGroup>
+            """
+    "Tab":
+        "prefix": "aytab"
+        "body": """
+            <Tab id=\"${1:text}\" title=\"${2:text}\" icon=\"${3:file}.png\">
+                $4
+            </Tab>
+            """
+    "ScrollableView":
+        "prefix": "ayscrollable"
+        "body": """
+            <ScrollableView id=\"${1:text}\" showPagingControl=\"${2:true}\">
+                $3
+            </ScrollableView>
+            """
+    "ScrollView":
+        "prefix": "ayscroll"
+        "body": """
+            <ScrollView id=\"${1:text}\" showVerticalScrollIndicator=\"${2:true}\" showHorizontalScrollIndicator=\"${3:true}\">
+                $4
+            </ScrollView>
+            """
