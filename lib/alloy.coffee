@@ -1,14 +1,13 @@
-TitaniumView = require './titanium-view'
+AlloyView = require './alloy-view'
 
 module.exports =
-  titaniumView: null
+  alloyView: null
 
   activate: (state) ->
-    @titaniumView = new TitaniumView(state.titaniumViewState)
+    @alloyView = new AlloyView(state.alloyViewState)
 
   deactivate: ->
-    @titaniumView.destroy()
+    @alloyView.destroy()
 
   serialize: ->
-    titaniumViewState: @titaniumView.serialize()
-    
+    alloyViewState: @alloyView.serialize()

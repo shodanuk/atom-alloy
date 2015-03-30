@@ -1,13 +1,13 @@
 {View} = require 'atom'
 
 module.exports =
-class TitaniumView extends View
+class AlloyView extends View
   @content: ->
-    @div class: 'titanium overlay from-top', =>
-      @div "The Titanium package is Alive! It's ALIVE!", class: "message"
+    @div class: 'alloy overlay from-top', =>
+      @div "The Alloy package is Alive! ALIVE!", class: "message"
 
   initialize: (serializeState) ->
-    atom.workspaceView.command "titanium:toggle", => @toggle()
+    atom.workspaceView.command "alloy:toggle", => @toggle()
 
   # Returns an object that can be retrieved when package is activated
   serialize: ->
@@ -17,7 +17,7 @@ class TitaniumView extends View
     @detach()
 
   toggle: ->
-    console.log "TitaniumView was toggled!"
+    console.log "AlloyView was toggled!"
     if @hasParent()
       @detach()
     else
