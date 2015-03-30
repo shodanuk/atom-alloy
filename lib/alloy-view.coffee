@@ -1,24 +1,22 @@
-{View} = require 'atom'
-
 module.exports =
-class AlloyView extends View
-  @content: ->
-    @div class: 'alloy overlay from-top', =>
-      @div "The Alloy package is Alive! ALIVE!", class: "message"
+class AlloyView
+  constructor: (serializedState) ->
+    # Create root element
+    @element = document.createElement('div')
+    @element.classList.add('alloy')
 
-  initialize: (serializeState) ->
-    atom.workspaceView.command "alloy:toggle", => @toggle()
+    # Create message element
+    message = document.createElement('div')
+    message.textContent = "The Alloy package is Alive! ALIVE!"
+    message.classList.add('message')
+    @element.appendChild(message)
 
   # Returns an object that can be retrieved when package is activated
   serialize: ->
 
   # Tear down any state and detach
   destroy: ->
-    @detach()
+    @element.remove()
 
-  toggle: ->
-    console.log "AlloyView was toggled!"
-    if @hasParent()
-      @detach()
-    else
-      atom.workspaceView.append(this)
+  getElement: ->
+    @element
