@@ -1,14 +1,13 @@
 {
-  "name": "Alloy",
-  "main": "./lib/alloy",
-  "version": "0.0.1",
-  "description": "A collection of snippets to help speed up development using Appcelerators's Alloy framework.",
-  "activationEvents": ["alloy:toggle"],
-  "repository": "https://github.com/shodanuk/atom-alloy",
-  "license": "MIT",
-  "engines": {
-    "atom": ">0.50.0"
-  },
-  "dependencies": {
-  }
+    "name": "Alloy",
+    "main": "./lib/alloy",
+    "version": "0.0.2",
+    "description": "A collection of snippets to help speed up development using Appcelerators's Alloy framework. Very much a WIP.",
+    "activationEvents": ["alloy:toggle"],
+    "repository": "https://github.com/shodanuk/atom-alloy",
+    "license": "MIT",
+    "engines": {
+        "atom": ">0.180.0"
+    },
+    "dependencies": {}
 }
